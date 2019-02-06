@@ -6,7 +6,8 @@ Given the six card input hand, there are fifteen possible four card hands that c
 
 For each of the fifteen possible four card hands we iterate through all possible flip cards and calculate the score of the hand formed by the four cards plus the flip cards. The probability of obtaining this hand is the probability of obtaining that particular flip card. For this application, we ignore card suit. Therefore, the probability of a particular flip card being obtained is \frac{c}{46} where *c* is the number of that card type remaining in the deck. Formally, the expected score of a hand is:
 
-E(s(h)) = \sum_{k} p(k_{i})s(h) 
+![alt_text][summation]
+[summation]: https://github.com/wspoons5/CribbageAutomater/blob/master/summation1.png
 
 where *s(h)* is the score of the hand formed by the four cards kept and the one flip card, *E(s(h))*, is the expected value of *s(h)*, *k* is the set of possible flip cards, k_{i} is an element of *k*, and *p(k_{i})* is the probability of obtaining k_{i}. 
 
